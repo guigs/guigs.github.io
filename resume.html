@@ -1,0 +1,488 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+  <title>guigs81 - Guilherme Goettems Schneider</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <style type="text/css">
+  #g_title p, #g_footer p, #g_description p {
+    margin: 0;
+  }
+  /*
+
+  	-- -- -- -- -- -- --
+  	Browser Fixes
+  	-- -- -- -- -- -- --
+  	
+  	This file uses CSS filtering methods to fix various
+  	layout bugs.
+
+  	Each of the following three imported files is a 
+  	separate, browser-specific CSS file that keeps all 
+  	hacks out of the main style sheet.
+  	
+  	Over time, as supporting these browsers no longer
+  	remains a priority, cleaning up the hacks is as
+  	easy as deleting the @import statement below, or
+  	simply no longer linking this file from the HTML.
+  	
+  */
+
+  /* 
+    fix ie6 "peekaboo bug" using the "holly hack". 
+    Note, this style only gets applied to ie6
+  */
+  * html .wrapper {
+    height: 0.1%;
+  }
+
+  /* 
+   * IE5 mac - overrides the IE/Win hack 
+   */
+
+  /*\*//*/
+
+  * html #threecolumn div {
+  	height: auto;
+  }
+
+  /**/
+
+
+  /* 
+   * IE5/Win-specific CSS -ensures #container wraps all content on window resize
+   */
+
+  @media tty {
+   i{content:"\";/*" "*/}} * html #container { height: 1%; } /*";}
+  }/* */
+  /* Styling for editable elements. Eventually, this will be part of the style. */
+  .editable {
+    border: 1px dashed blue;
+  }
+  
+  #footer {
+    clear: both;
+  }
+  
+  /* Extra divs hidden by default. The custom CSS can override this though */
+  #extraDiv1, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 {
+    display: none;
+  }
+  
+  a img,:link img,:visited img {border: none;}
+
+
+  body {
+    text-align: center;
+  }
+  #container {
+    width: 718px;
+    text-align: left;
+    margin: 0 auto;
+  }
+  /** BEGIN CUSTOM SKIN **/
+  /* general layout */
+
+  body {
+    font-family: Lucida Grande, Lucida Sans Unicode, Verdana, Helvetica, Arial, sans-serif;
+    font-size: 83%;
+    margin: 0em;
+    padding: 0em;
+    border-top: 1em solid #e2e6ec;
+    background: #e2e6ec url(/-/includes/style/madison/madison-one/container-fill.gif) center repeat-y;
+  }
+  body div#container {
+    padding: 0em;
+    margin-top: 0em;
+    border-top: 1px solid #e2e6ec; /* a hack: without it Firefox adds top margin in layouts with sidebar */
+    background: url(/-/includes/style/madison/madison-one/container-top.gif) top no-repeat;
+  }
+  div#container div.wrapper {
+    padding: 0em;
+    margin: 0em;
+  }
+  div#header {
+    padding: 0em 35px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    _padding-bottom: 1em; /* hack for IE6 */
+    margin: 0em;
+    margin-top: 2em;
+    background: url(/-/includes/style/madison/madison-one/header-fill.gif) repeat-y;
+  }
+  div#header div.wrapper {
+    padding: 0em;
+    margin: 0em;
+  }
+  div#main-content {
+    line-height: 160%;
+    color: #3f3f3f;
+    background: url(/-/includes/style/madison/madison-one/content-top.gif) top no-repeat;
+  }
+  div#sidebar,div#sidebar-alternate {
+    font-size: 83%;
+    line-height: 140%;
+    color: #3f3f3f;
+    background: url(/-/includes/style/madison/madison-one/content-top.gif) top no-repeat;
+    padding: 0em;
+    margin: 0em;
+    padding-top: 1.5em;
+  }
+  div#footer {
+    margin-top: 2em;
+    background: url(/-/includes/style/madison/madison-one/content-top.gif) top no-repeat;
+    padding: 1em 35px;
+    color: #7f7f7f;
+  }
+  div#footer hr { /* I don't like this, but I have no idea why that <hr> is there */
+    display: none;
+  }
+
+  /* adjusting widths for different layouts */
+
+  body#onecolumn div#main-content {
+    padding: 0em 35px;
+    width: 648px;
+  }
+  body#twocolumn-right div#main-content {
+    padding: 0em 25px;
+    width: 420px;
+    margin-left: 10px;
+  }
+  body#twocolumn-left div#main-content {
+    padding: 0em 25px;
+    width: 420px;
+    margin-right: 8px;
+    display: inline;
+  }
+  body#twocolumn-left div#sidebar {
+    padding-left: 15px;
+    width: 215px;
+  }
+  body#twocolumn-right div#sidebar {
+    padding-right: 15px;
+    width: 215px;
+  }
+  body#threecolumn div#main-content {
+    padding: 0em 25px;
+    width: 370px;
+  }
+  body#threecolumn div#sidebar {
+    padding-left: 15px;
+    width: 125px;
+    margin-left: 10px;
+    display: inline;
+  }
+  body#threecolumn div#sidebar-alternate {
+    padding-right: 15px;
+    width: 125px;
+  }
+
+  /* general styles: headings */
+
+  h1, h2, h3, h4, h5, h6, p.description {
+    font-family: Lucida Grande, Lucida Sans Unicode, Verdana, Helvetica, Arial, sans-serif; 
+  }
+  h1 {
+    font-size: 160%;
+    font-weight: bold;
+    color: black;
+    border-bottom: 1px solid #b3e6e6;
+    padding-bottom: 0.2em;
+    display: inline; /* so that the underline spans only text width, and not the entire page */
+    line-height: 400%; /* for padding below, the above line took away other possibilities */
+  }
+  h2 {
+    font-size: 120%;
+    font-weight: bold;
+    color: black;
+    border-bottom: 1px solid #b3e6e6;
+    padding-bottom: 0.2em;
+    display: inline; /* so that the underline spans only text width, and not the entire page */
+    line-height: 400%; /* for padding below, the above line took away other possibilities */
+  }
+  h3 {
+    font-size: 110%;
+    font-weight: bold;
+    border-bottom: 1px solid #b3e6e6;
+    padding-bottom: 0.2em;
+    color: black;
+    display: inline; /* so that the underline spans only text width, and not the entire page */
+    line-height: 300%; /* for padding below, the above line took away other possibilities */
+  }
+  h4 {
+    font-size: 100%;
+    font-weight: bold;
+    border-bottom: 1px solid #b3e6e6;
+    padding-bottom: 0.2em;
+    color: black;
+    display: inline; /* so that the underline spans only text width, and not the entire page */
+    line-height: 200%; /* for padding below, the above line took away other possibilities */
+  }
+  h5 {
+    font-size: 100%;
+    font-weight: bold;
+    color: black;
+    display: inline;
+  }
+  h6 {
+    font-size: 100%;
+    font-weight: normal;
+    color: black;
+    display: inline;
+  }
+  hr {
+    background: white;
+    height: 1px;
+    border: 0em;
+    border-top: 1px solid #b3e6e6;
+    margin: 1em 0em;
+  }
+
+  /* general styles: links */
+
+  a {
+    color: #125ebc;
+    text-decoration: none;
+    border-bottom: 1px solid #125ebc; /* this underline is further away from the text = more legibility */
+  }
+  a:visited {
+    color: #638bbc;
+    text-decoration: none;
+    border-bottom: 1px solid #638bbc; /* this underline is further away from the text = more legibility */
+  }
+
+  /* general styles: lists */
+
+  ul, ol {
+    margin-left: 1.8em;
+    padding: 0em;
+  }
+  dt {
+    margin-left: 1.8em;
+  }
+  blockquote {
+    margin-left: 1.8em;
+  }
+
+  /* general styles: tables */
+
+  table {
+    border-collapse: collapse;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: -0.6em;
+    margin-right: -0.6em;
+  }
+
+  table td,table th {
+    padding: 0.3em 0.6em;
+    vertical-align: top;
+    text-align: left;
+  }
+  table th {
+    border-bottom: 1px solid #b3e6e6;
+  }
+  table caption {
+    text-align: left;
+    font-weight: bold;
+    color: #4FBBBB;
+    padding: 0em;
+    _padding: 0em 0.6em; /* hack for IE6: it understands padding differently here */
+  }
+
+  /* specific styles */
+
+  h1#page-title {
+    font-size: 220%;
+    font-weight: normal;
+    color: #125ebc;
+    letter-spacing: -1px;
+    display: block;
+    border: 0em;
+    padding: 0em;
+    margin: 0em;
+    line-height: 100%;
+  }
+  div#g_description {
+    font-size: 140%;
+    font-weight: normal;
+    color: #125ebc; 
+  }
+
+  /* correcting horizontal margins for different layouts */
+
+  body#twocolumn-left div#header, body#threecolumn div#header {
+    padding-left: 25px;
+  }
+
+  /** END CUSTOM SKIN **/
+  </style>
+
+  <!-- Hack to avoid flash of unstyled content in IE -->
+  <script> </script>
+</head>
+
+<body id="onecolumn">
+  <div id="container">
+    <div class="wrapper">
+      <div id="header">
+        <div class="wrapper">
+          <h1 id="page-title"><div id='g_title'>Guilherme Goettems Schneider</div></h1>
+          <div style="clear: both;"></div>
+          <p class="description"><div id='g_description'><p></p>Resume</div></p>
+          <div style="clear: both"></div>
+        </div>
+      </div>
+      <!-- /editable --><!-- /wrapper --><!-- /header -->
+      <div id="main-content">
+        
+        <div class="wrapper">
+          <div class="content-item "><div id='g_body'>
+<h1>Personal information</h1>
+<img tabindex="0" src="guilherme.JPG" align="right">
+<ul>
+<li><b>Name: </b>Guilherme Goettems Schneider</li>
+
+<li><b>Birthday:</b> September 15th, 1981 
+</li>
+
+<li><b>Nationality:</b> Brazilian 
+</li>
+
+<li><b>E-mail: </b><a href="mailto:guigs81@gmail.com">guigs81@gmail.com</a></li>
+
+<li><b>Mobile:</b> +55 51 9125 7515 
+</li>
+
+<li><b>Address:</b> Rua Doralina Silveira Dias, 180/32H.<br>Bairro Santa Tereza. CEP: 93037-070. São Leopoldo-RS. Brazil. 
+</li>
+
+<li><b>Interests:</b> Software architecture, configuration management, software quality, algorithms, entrepreneurship.</li>
+</ul>
+
+<h1>Education</h1>
+
+<ul>
+<li><a title="Programa de Pós-Graduação em Computação" href="http://www.inf.ufrgs.br/pos/ppgc/">Post graduate in Computer Science</a> (incomplete) at <a title="Universidade Federal do Rio Grande do Sul" href="http://www.ufrgs.br/">UFRGS</a> (2005-2006) 
+</li>
+
+<li><a title="Institudo de Informática da UFRGS" href="http://www.inf.ufrgs.br/">BS Computer Science</a>, <a title="Universidade Federal do Rio Grande do Sul" href="http://www.ufrgs.br/">UFRGS</a>, Porto Alegre-RS, Brazil (2004) with <a title="College transcript" href="historico_escolar.html">more than 80% of &#39;A&#39; grade (GPA 3,79)</a></li>
+
+<li>Primary School at <a href="http://www.sinodal.com.br/">Colégio Sinodal</a> (1989-1999)</li>
+</ul>
+
+<h1>Thesis and supported works</h1>
+
+<ul>
+<li>Graduation Thesis: Estudo
+Prático da Ferramenta BREW através do Desenvolvimento de um Jogo
+Multijogador em Rede (Practical Study of BREW tools through the
+development of a multiplayer network game)<a href="ProjetoDeDiplomacao-GuilhermeGSchneider.pdf"><img style="border-width: 0px;" tabindex="0" src="pdf24.png/pdf24-medium;init:.jpg" hashcode="" closure=""></a> – <a href="http://www.inf.ufrgs.br/">Instituto de Informática</a> – <a title="Universidade Federal do Rio Grande do Sul" href="http://www.ufrgs.br/">UFRGS</a>, dec/2004</li>
+</ul>
+
+<p></p>
+
+<h1> Professional experience</h1>
+
+<ul>
+<li>Full-time job at <a href="http://www.iprocess.com.br/">iProcess</a> building BPM (Business Process Management) systems as a developer, technical leader, software designer (mar/2004 to present date).<br>Main technologies: Oracle, PL/SQL, PL/SQL Web, Oracle Workflow, XHTML, CSS.<br>Other technologies: MPS.BR, BPMN (Business Process Modeling Notation), Java, Javascript, Oracle BPEL, Oracle Designer, OWSM (Oracle Web Service Manager), WID (WebSphere Integration Developer).<br></li>
+
+<li> Workflow development consultant at <a href="http://www.tlantic.com.br/">Tlantic</a> (dec/2004 to mar/2007).<br>Main technologies: Oracle, PL/SQL, Oracle Workflow.<br>Other technologies: CMMI 2, ClearCase.</li>
+
+<li>Creator of <a href="http://www.tatri.com.br/">Tá Tri Imóveis</a> web site and web crawler (300hrs, jun/2007 to present date).<br>Main technologies: Ruby on Rails, MySQL, Apache, XHTML, CSS, Javascript.</li>
+
+<li>Analyst and developer of a content management application for <a href="http://www.isoservice.net/">IsoService</a> (250hrs, 2005). 
+<br>Main technologies: PHP, HTML. 
+</li>
+
+<li>Developer assistant of the Rafael R. de Araújo&#39;s <a title="Um Modelo de Resolução para o Problema de Roteirização em Arcos com Restrição de Capacidade" href="http://www.producao.ufrgs.br/publicacoes_detalhes.asp?cod_trabalho=473">master thesis</a> in <a href="http://www.producao.ufrgs.br">Production and Transport Engineering</a>, UFRGS (dec/2002 to dec/2003).<br>Main technologies: C++, graphs&#39; algorithms.</li>
+
+<li>Developer assistant of a <a href="http://www.inf.ufrgs.br/%7Eerika/">Érika F. Cota</a>&#39;s doctoral thesis <a title="Reuse-based Test Planning for Core-based Systems-on-chip" href="http://www.inf.ufrgs.br/%7Eerika/Thesis/ErikaCota_thesis.pdf"><img style="border-width: 0px;" tabindex="0" src="pdf24.png/pdf24-medium;init:.jpg" hashcode="" closure=""></a>  in <a href="http://www.inf.ufrgs.br/gme/"><span class="texto">The Microelectronics Group of UFRGS</span></a> (dec/2001 to dec/2002).<br>Main technologies: C++, heuristic optimization algorithms.<br></li>
+</ul>
+
+<h1>Prizes and Achievements</h1>
+
+<ul>
+<li>Sun Certified Programmer for J2SE 6.0, score of 90% (jan/2009). <a href="http://guigs81.googlepages.com/certificado-scjp6.jpg"><img style="border-width: 0px;" tabindex="0" src="http://guigs81.googlepages.com/certificado.png/certificado-medium;init:.jpg" hashcode="" closure=""></a><br></li>
+
+<li>OCEB (OMG Certified Expert in BPM), Technical Advanced (dec/2008). </li>
+
+<li>OCEB (OMG Certified Expert in BPM), Technical Intermediate (dec/2008).<br></li>
+
+<li>OCEB (OMG Certified Expert in BPM), Fundamental (jul/2008). <a href="certificadoOCEBFund.jpg"><img style="border-width: 0px;" tabindex="0" src="certificado.png/certificado-medium;init:.jpg" hashcode="" closure=""></a><br></li>
+
+<li>Oracle SOA Implementation Champion (jan/2008). <a href="http://oukc.oracle.com/static05/opn/soa_imp_cert.html?iProcess"><img style="border-width: 0px;" tabindex="0" src="certificado.png/certificado-medium;init:.jpg" hashcode="" closure=""></a><br></li>
+
+<li>Participation in the project that won Gold Award in <a href="http://www.waria.com/awards/award_winners06.htm">2006 Global Awards for Excellence in BPM &amp; Workflow (Pan European)</a> for Modelo Continente Hipermercados (Portugal) 
+</li>
+
+<li>Finalist in the <a href="http://acm.baylor.edu/acmicpc">ACM International Collegiate Programming Contest</a> (Brazil, 2004) 
+</li>
+
+<li>Work presentation at XIV (2002), XV (2003) and XVI (2004) <a href="http://www.ufrgs.br/propesq/sic.htm">Salão de Iniciação Científica</a>, gaining <a title="Destaques de 2003" href="http://www.ufrgs.br/propesq/destaques2003.htm">prominence in 2003</a></li>
+
+<li>Participation in MESE – Management and Economic Simulation Exercise (now <a href="http://titan.ja.org/">JA Titan</a>), winning the 1st place in classification stage and the 4th place in regional final (1999) 
+</li>
+
+<li>Bronze medal at <i>Olimpíada Regional de Matemática do RS</i> (Regional Mathematics Olympiad), Level 3 (1999) <a title="certificate" href="certificado-orm.jpg"><img style="border-width: 0px;" tabindex="0" src="certificado.png/certificado-medium;init:.jpg" hashcode="" closure=""></a></li>
+
+<li><a title="1999&#39;s Prizewinners" href="http://www.obm.org.br/premiosobm1999.htm">Honorific Mention</a> at XXI <a href="http://www.obm.org.br/"><i>Olimpíada Brasileira de Matemática</i></a> (Brazilian Mathematics Olympiad, 1999) </li>
+</ul>
+
+<h1>Languages</h1>
+
+<ul>
+<li>Portuguese (native language)</li>
+
+<li>English course at <a href="http://www.goaheadschool.com.br/">Go Ahead</a> (2007-2008)</li>
+
+<li>Spanish course at <a href="http://www.culturaamericana.com.br/">Cultura Americana</a>, Novo Hamburgo (Intermediate Level in progress, 2008-2009)</li>
+
+<li>English (<a href="http://www.unisinos.br/unilinguas/">Unilínguas</a> – Unisinos, finished &quot;Advanced IV&quot; level in 2002)</li>
+
+<li>English course at <a href="http://www.centrelinguista.com/">Centre Linguista</a> at Toronto, Canada (feb/2000)</li>
+</ul>
+
+<h1>Others</h1>
+
+<ul>
+<li>WebSphere Integration Developer and Process Server Courses (<a title="Integrating Using WebSphere Integration Developer and Process Server" href="http://www-304.ibm.com/jct03001c/services/learning/ites.wss/us/en?pageType=course_description&amp;courseCode=BI111&amp;mainTab=1">BI111</a> and <a title="Integrating Using WebSphere Integration Developer and Process Server II" href="http://www-304.ibm.com/jct03001c/services/learning/ites.wss/us/en?pageType=course_description&amp;courseCode=BI112&amp;mainTab=1">BI112</a>) at IBM - São Paulo (40hrs each, 2007) </li>
+
+<li>Travel to Portugal for a system homologation at Sonae (jul/2006)</li>
+
+<li>Eletronic Game Developing course at <a title="Centro de Empreendimentos em Informática" href="http://www.inf.ufrgs.br/cei/">CEI-UFRGS</a> (40hrs, 2004) 
+</li>
+
+<li>Participations in <a href="http://www.desafio.sebrae.com.br/">Desafio Sebrae</a> (2003 and 2004) 
+</li>
+
+<li>Member of <a href="http://www.allegro.cc/">Allegro Game developing community network</a> (since 2000) 
+</li>
+
+<li>Participation in the <i>Programa Miniempresa</i> of <a href="http://www.jabrasil.org.br/">Junior Achievement</a> (1998) <a title="certificate" href="certificado-ja.jpg"><img style="border-width: 0px;" tabindex="0" src="certificado.png/certificado-medium;init:.jpg" hashcode="" closure=""></a></li>
+
+<li><a href="http://www.geocities.com/guibocca/jog_comp.htm">Game developing</a> in QBasic and C++ as a hobby (1995-2001)</li>
+</ul>
+</div></div>
+          <div style="clear: both"></div>
+        </div>
+      </div>
+      <!-- /wrapper --><!-- /main-content -->
+      <div id="footer"><div class="wrapper">
+        <hr />
+        <p><div id='g_footer'><p>Updated: Mar 17th, 2009.</p></div></p>
+        <div style="clear: both"></div>
+      </div></div>
+      <!-- /wrapper --><!-- /footer -->
+    </div>
+  </div>
+<!-- /wrapper --><!-- /container -->
+
+<div id="extraDiv1"><span></span></div><div id="extraDiv2"><span></span></div>
+<div id="extraDiv3"><span></span></div><div id="extraDiv4"><span></span></div>
+<div id="extraDiv5"><span></span></div><div id="extraDiv6"><span></span></div>
+
+</body>
+</html>

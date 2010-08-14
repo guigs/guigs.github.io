@@ -1,0 +1,102 @@
+.TextoComum {
+	FONT-SIZE: 10px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.TextoAzulForte {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #465677; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; HEIGHT: 22px; TEXT-ALIGN: center
+}
+.textConsultar {
+	BORDER-RIGHT: #000000 1px outset; BORDER-TOP: #000000 1px outset; FONT-SIZE: 11px; BACKGROUND-ATTACHMENT: fixed; BORDER-LEFT: #000000 1px outset; COLOR: #000000; BORDER-BOTTOM: #000000 1px outset; FONT-FAMILY: Verdana, Arial, Verdana; BACKGROUND-COLOR: #ffffff
+}
+.botaoConsultar {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 11px; BORDER-LEFT: #000000 1px solid; COLOR: #000000; BORDER-BOTTOM: #000000 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #c2d6eb
+}
+.TabFundo {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #465677
+}
+.TabForte {
+	FONT-SIZE: 10px; COLOR: #465677; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; HEIGHT: 10px; BACKGROUND-COLOR: #e9e9e9
+}
+.Rafa {
+	FONT-SIZE: 10px; COLOR: #465677; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; HEIGHT: 10px; BACKGROUND-COLOR: #e9e9e9
+}
+.TabForte A {
+	
+}
+.TabForte A:hover {
+	; WIDTH: expression("98%"); COLOR: #a70a35
+}
+.TabFraco {
+	FONT-SIZE: 10px; COLOR: #465677; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; HEIGHT: 10px; BACKGROUND-COLOR: #ffffff
+}
+.TabVerde {
+	FONT-SIZE: 10px; COLOR: #00ff00; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; HEIGHT: 10px; BACKGROUND-COLOR: #ffffff
+}
+.TabVermelho {
+	FONT-SIZE: 10px; COLOR: #ff0000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; HEIGHT: 10px; BACKGROUND-COLOR: #ffffff
+}
+.TabFraco A {
+	
+}
+.TabFraco A:hover {
+	; WIDTH: expression("98%"); COLOR: #a70a35
+}
+.TabFraco A {
+	FONT-SIZE: 10px; COLOR: #465677; HEIGHT: 10px; TEXT-DECORATION: none
+}
+.TabForte A {
+	FONT-SIZE: 10px; COLOR: #465677; HEIGHT: 10px; TEXT-DECORATION: none
+}
+.TabFraco A:hover {
+	TEXT-DECORATION: underline
+}
+.TabForte A:hover {
+	TEXT-DECORATION: underline
+}
+.titulo {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none
+}
+.subtitulo {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none
+}
+.peq {
+	FONT-SIZE: 1px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none
+}
+.peq2 {
+	FONT-SIZE: 9px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none
+}
+.conteudoTabelaCorFracaB {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none
+}
+.formTextfield {
+	BORDER-RIGHT: #000000 1px outset; BORDER-TOP: #000000 1px outset; FONT-SIZE: 10px; BACKGROUND-ATTACHMENT: fixed; BORDER-LEFT: #000000 1px outset; WIDTH: 100%; COLOR: #000000; BORDER-BOTTOM: #000000 1px outset; FONT-FAMILY: Verdana, Arial, Verdana; BACKGROUND-COLOR: #ffffff
+}
+.formTextfield2 {
+	BORDER-RIGHT: #000000 1px outset; BORDER-TOP: #000000 1px outset; FONT-SIZE: 10px; BACKGROUND-ATTACHMENT: fixed; BORDER-LEFT: #000000 1px outset; COLOR: #000000; BORDER-BOTTOM: #000000 1px outset; FONT-FAMILY: Verdana, Arial, Verdana; BACKGROUND-COLOR: #ffffff
+}
+.botao {
+	BORDER-RIGHT: #000000 1px outset; BORDER-TOP: #000000 1px outset; FONT-WEIGHT: bold; FONT-SIZE: 10px; BACKGROUND-ATTACHMENT: fixed; BORDER-LEFT: #000000 1px outset; COLOR: #465677; BORDER-BOTTOM: #000000 1px outset; FONT-FAMILY: Verdana, Arial, Verdana; BACKGROUND-COLOR: #cccccc
+}
+.conteudoTabelaCorForte {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #c2d6eb; TEXT-DECORATION: none
+}
+.conteudoTabelaCorFraca {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none
+}
+.nomedisciplina {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+.nomedisciplina2 {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.conteudoTabelaCorFraca1 {
+	FONT-SIZE: 10px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none
+}
+.conteudoTopo {
+	FONT-SIZE: 10px; COLOR: #003366; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.conteudoTabela2CorFraca {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none
+}
+.conteudoTabelaCorFraca2 {
+	FONT-SIZE: 9px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none
+}

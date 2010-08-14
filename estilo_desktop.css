@@ -1,0 +1,19 @@
+body {
+   margin: 0px;
+   font-family: tahoma, verdana, sans-serif;
+   font-size : 11px;
+   color: #000000; 
+   background: #ffffff;
+}
+
+div.principal {
+	display: block;
+}
+
+div.detalhe {
+	display: block;
+}
+
+em {
+   color: #00ff00;
+}
