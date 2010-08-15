@@ -1,0 +1,319 @@
+#g_title p, #g_footer p, #g_description p {
+    margin: 0;
+}
+/*
+
+  	-- -- -- -- -- -- --
+  	Browser Fixes
+  	-- -- -- -- -- -- --
+
+  	This file uses CSS filtering methods to fix various
+  	layout bugs.
+
+  	Each of the following three imported files is a
+  	separate, browser-specific CSS file that keeps all
+  	hacks out of the main style sheet.
+
+  	Over time, as supporting these browsers no longer
+  	remains a priority, cleaning up the hacks is as
+  	easy as deleting the @import statement below, or
+  	simply no longer linking this file from the HTML.
+
+*/
+
+/*
+  fix ie6 "peekaboo bug" using the "holly hack".
+  Note, this style only gets applied to ie6
+*/
+* html .wrapper {
+    height: 0.1%;
+}
+
+/*
+ * IE5 mac - overrides the IE/Win hack
+*/
+
+/*\*//*/
+
+* html #threecolumn div {
+  	height: auto;
+}
+
+/**/
+
+
+/*
+ * IE5/Win-specific CSS -ensures #container wraps all content on window resize
+*/
+
+
+/* Styling for editable elements. Eventually, this will be part of the style. */
+.editable {
+    border: 1px dashed blue;
+}
+
+#footer {
+    clear: both;
+}
+
+/* Extra divs hidden by default. The custom CSS can override this though */
+#extraDiv1, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 {
+    display: none;
+}
+
+a img,:link img,:visited img {border: none;}
+
+body {
+    text-align: center;
+}
+#container {
+    width: 942px;
+    text-align: left;
+    margin: 0 auto;
+}
+/** BEGIN CUSTOM SKIN **/
+/* general layout */
+
+body {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
+    font-size: 83%;
+    margin: 0em;
+    padding: 0em;
+    border-top: 1em solid #e2e6ec;
+    background: #e2e6ec url(/-/includes/style/madison/madison-one/container-fill.gif) center repeat-y;
+}
+body div#container {
+    padding: 0em;
+    margin-top: 0em;
+    border-top: 1px solid #e2e6ec; /* a hack: without it Firefox adds top margin in layouts with sidebar */
+    background: url(/-/includes/style/madison/madison-one/container-top.gif) top no-repeat;
+}
+div#container div.wrapper {
+    padding: 0em;
+    margin: 0em;
+}
+div#header {
+    padding: 0em 35px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    _padding-bottom: 1em; /* hack for IE6 */
+    margin: 0em;
+    margin-top: 2em;
+    background: url(/-/includes/style/madison/madison-one/header-fill.gif) repeat-y;
+}
+div#header div.wrapper {
+    padding: 0em;
+    margin: 0em;
+}
+div#main-content {
+    line-height: 160%;
+    color: #3f3f3f;
+    background: url(/-/includes/style/madison/madison-one/content-top.gif) top no-repeat;
+}
+div#sidebar,div#sidebar-alternate {
+    font-size: 83%;
+    line-height: 140%;
+    color: #3f3f3f;
+    background: url(/-/includes/style/madison/madison-one/content-top.gif) top no-repeat;
+    padding: 0em;
+    margin: 0em;
+    padding-top: 1.5em;
+}
+div#footer {
+    margin-top: 2em;
+    background: url(/-/includes/style/madison/madison-one/content-top.gif) top no-repeat;
+    padding: 1em 35px;
+    color: #7f7f7f;
+}
+div#footer hr { /* I don't like this, but I have no idea why that <hr> is there */
+                display: none;
+}
+
+/* adjusting widths for different layouts */
+
+body#onecolumn div#main-content {
+    padding: 0em 35px;
+    width: 872px;
+}
+body#twocolumn-right div#main-content {
+    padding: 0em 25px;
+    width: 420px;
+    margin-left: 10px;
+}
+body#twocolumn-left div#main-content {
+    padding: 0em 25px;
+    width: 420px;
+    margin-right: 8px;
+    display: inline;
+}
+body#twocolumn-left div#sidebar {
+    padding-left: 15px;
+    width: 215px;
+}
+body#twocolumn-right div#sidebar {
+    padding-right: 15px;
+    width: 215px;
+}
+body#threecolumn div#main-content {
+    padding: 0em 25px;
+    width: 370px;
+}
+body#threecolumn div#sidebar {
+    padding-left: 15px;
+    width: 125px;
+    margin-left: 10px;
+    display: inline;
+}
+body#threecolumn div#sidebar-alternate {
+    padding-right: 15px;
+    width: 125px;
+}
+
+/* general styles: headings */
+
+h1, h2, h3, h4, h5, h6, p.description {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
+}
+h1 {
+    font-size: 160%;
+    font-weight: bold;
+    color: black;
+    border-bottom: 1px solid #b3e6e6;
+    padding-bottom: 0.2em;
+    display: inline; /* so that the underline spans only text width, and not the entire page */
+    line-height: 360%; /* for padding below, the above line took away other possibilities */
+}
+h2 {
+    font-size: 120%;
+    font-weight: bold;
+    color: black;
+    border-bottom: 1px solid #b3e6e6;
+    padding-bottom: 0.2em;
+    display: inline; /* so that the underline spans only text width, and not the entire page */
+    line-height: 250%; /* for padding below, the above line took away other possibilities */
+}
+h3 {
+    font-size: 110%;
+    font-weight: bold;
+    border-bottom: 1px solid #b3e6e6;
+    padding-bottom: 0.2em;
+    color: black;
+    display: inline; /* so that the underline spans only text width, and not the entire page */
+    line-height: 220%; /* for padding below, the above line took away other possibilities */
+}
+h4 {
+    font-size: 100%;
+    font-weight: bold;
+    border-bottom: 1px solid #b3e6e6;
+    padding-bottom: 0.2em;
+    color: black;
+    display: inline; /* so that the underline spans only text width, and not the entire page */
+    line-height: 200%; /* for padding below, the above line took away other possibilities */
+}
+h5 {
+    font-size: 100%;
+    font-weight: bold;
+    color: black;
+    display: inline;
+}
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+    color: black;
+    display: inline;
+}
+hr {
+    background: white;
+    height: 1px;
+    border: 0em;
+    border-top: 1px solid #b3e6e6;
+    margin: 1em 0em;
+}
+
+/* general styles: links */
+
+a {
+    color: #125ebc;
+    text-decoration: none;
+    border-bottom: 1px solid #125ebc; /* this underline is further away from the text = more legibility */
+}
+a:visited {
+    color: #638bbc;
+    text-decoration: none;
+    border-bottom: 1px solid #638bbc; /* this underline is further away from the text = more legibility */
+}
+
+a.img {
+    border-bottom: none;
+}
+
+/* general styles: lists */
+
+ul, ol {
+    margin-left: 1.8em;
+    padding: 0em;
+}
+dt {
+    margin-left: 1.8em;
+}
+blockquote {
+    margin-left: 1.8em;
+}
+
+/* general styles: tables */
+
+table {
+    border-collapse: collapse;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: -0.6em;
+    margin-right: -0.6em;
+}
+
+table td,table th {
+    padding: 0.5em 0.6em;
+    vertical-align: top;
+    text-align: left;
+    border-bottom: 1px solid #93d6d6;
+}
+table th {
+    border-bottom: 2px solid #93d6d6;
+}
+table caption {
+    text-align: left;
+    font-weight: bold;
+    color: #4FBBBB;
+    padding: 0em;
+    _padding: 0em 0.6em; /* hack for IE6: it understands padding differently here */
+}
+
+/* specific styles */
+
+h1#page-title {
+    font-size: 220%;
+    font-weight: normal;
+    color: #125ebc;
+    letter-spacing: -1px;
+    display: block;
+    border: 0em;
+    padding: 0em;
+    margin: 0em;
+    line-height: 100%;
+}
+span#g_description {
+    font-size: 140%;
+    font-weight: normal;
+    color: #125ebc;
+}
+
+span.tooltip {
+    border-bottom: 1px dashed;
+}
+
+/* correcting horizontal margins for different layouts */
+
+body#twocolumn-left div#header, body#threecolumn div#header {
+    padding-left: 25px;
+}
+
+/** END CUSTOM SKIN **/
