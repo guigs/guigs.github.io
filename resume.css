@@ -80,13 +80,13 @@ body {
     margin: 0em;
     padding: 0em;
     border-top: 1em solid #e2e6ec;
-    background: #e2e6ec url(/-/includes/style/madison/madison-one/container-fill.gif) center repeat-y;
+    background: #e2e6ec url(-/includes/style/madison/madison-one/container-fill.gif) center repeat-y;
 }
 body div#container {
     padding: 0em;
     margin-top: 0em;
     border-top: 1px solid #e2e6ec; /* a hack: without it Firefox adds top margin in layouts with sidebar */
-    background: url(/-/includes/style/madison/madison-one/container-top.gif) top no-repeat;
+    background: url(-/includes/style/madison/madison-one/container-top.gif) top no-repeat;
 }
 div#container div.wrapper {
     padding: 0em;
@@ -99,7 +99,7 @@ div#header {
     _padding-bottom: 1em; /* hack for IE6 */
     margin: 0em;
     margin-top: 2em;
-    background: url(/-/includes/style/madison/madison-one/header-fill.gif) repeat-y;
+    background: url(-/includes/style/madison/madison-one/header-fill.gif) repeat-y;
 }
 div#header div.wrapper {
     padding: 0em;
@@ -108,20 +108,24 @@ div#header div.wrapper {
 div#main-content {
     line-height: 160%;
     color: #3f3f3f;
-    background: url(/-/includes/style/madison/madison-one/content-top.gif) top no-repeat;
+    background: url(-/includes/style/madison/madison-one/content-top.gif) top no-repeat;
+}
+img.foto {
+    margin-top: 20px;
+    float: right;
 }
 div#sidebar,div#sidebar-alternate {
     font-size: 83%;
     line-height: 140%;
     color: #3f3f3f;
-    background: url(/-/includes/style/madison/madison-one/content-top.gif) top no-repeat;
+    background: url(-/includes/style/madison/madison-one/content-top.gif) top no-repeat;
     padding: 0em;
     margin: 0em;
     padding-top: 1.5em;
 }
 div#footer {
     margin-top: 2em;
-    background: url(/-/includes/style/madison/madison-one/content-top.gif) top no-repeat;
+    background: url(-/includes/style/madison/madison-one/content-top.gif) top no-repeat;
     padding: 1em 35px;
     color: #7f7f7f;
 }
