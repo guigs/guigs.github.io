@@ -257,6 +257,12 @@ ul, ol {
     margin-left: 1.8em;
     padding: 0em;
 }
+
+td ul {
+    margin: 0;
+    margin-left: 0.9em;
+}
+
 dt {
     margin-left: 1.8em;
 }
