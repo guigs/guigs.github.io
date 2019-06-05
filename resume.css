@@ -94,8 +94,8 @@ div#container div.wrapper {
 }
 div#header {
     padding: 0em 35px;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     _padding-bottom: 1em; /* hack for IE6 */
     margin: 0em;
     margin-top: 2em;
@@ -104,6 +104,10 @@ div#header {
 div#header div.wrapper {
     padding: 0em;
     margin: 0em;
+}
+div#header div.updated {
+    float: right;
+    color: #7f7f7f;
 }
 div#main-content {
     line-height: 160%;
@@ -128,9 +132,6 @@ div#footer {
     background: url(-/includes/style/madison/madison-one/content-top.gif) top no-repeat;
     padding: 1em 35px;
     color: #7f7f7f;
-}
-div#footer hr { /* I don't like this, but I have no idea why that <hr> is there */
-                display: none;
 }
 
 /* adjusting widths for different layouts */
@@ -327,3 +328,10 @@ body#twocolumn-left div#header, body#threecolumn div#header {
 }
 
 /** END CUSTOM SKIN **/
+
+@media print {
+    tr {
+        page-break-inside: avoid;
+        -webkit-region-break-inside: avoid;
+    }
+}
